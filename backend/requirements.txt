@@ -6,3 +6,4 @@ numpy
 transformers>=4.30,<4.40
 torch
 scikit-learn
+gunicorn
