@@ -17,6 +17,9 @@ RUN pip install --no-cache-dir torch --index-url https://download.pytorch.org/wh
 COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 
+# Add this in your Dockerfile to be safe
+COPY models/ ./models/
+
 # 6. Copy your project code
 COPY . .
 
